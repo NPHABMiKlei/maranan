@@ -247,21 +247,17 @@ I also value continuous learning and self-improvement, always looking for ways t
         <li>Passed the IC3 Assessment</li>
     </ul>
 </section>
-<section id="gallery">
+<section IMG_9215.jpeg="gallery">
+    <section IMG_9216.jpeg="gallery">
     <h2>Memories</h2>
     <div class="memories">
         <div>
-            <img src="IMG_9215.jpeg" alt="Gallery Photo">
+            <img src="482511200_987311059587804_472418" alt="Gallery Photo">
             <p>“A moment worth remembering.”</p>
         </div>
         <div>
-            <img src="IMG_9216.jpeg" alt="Gallery Photo">
+            <img src="IMG_9749.jpeg" alt="Gallery Photo">
             <p>“Small memories, big happiness.”</p>
-        </div>
-        <div>
-            <img src="photo3.jpg" alt="Gallery Photo">
-            <p>“Growth through every season.”</p>
-        </div>
     </div>
 </section>
 <section id="advocacy">
