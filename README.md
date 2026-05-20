@@ -4,7 +4,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Personal Website</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{
@@ -247,6 +246,7 @@ I also value continuous learning and self-improvement, always looking for ways t
         <li>Passed the IC3 Assessment</li>
     </ul>
 </section>
+<section id="gallery">
 <section IMG_9215.jpeg="gallery">
     <section IMG_9216.jpeg="gallery">
     <h2>Memories</h2>
