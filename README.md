@@ -170,8 +170,6 @@ footer a:hover{
     <p><strong>Birthday:</strong> April 09, 1998</p>
     <p><strong>Favorite Color:</strong> Pink</p>
     <p><strong>Address:</strong> L5 B6 Carmona St. cor., Agueda Vista Verde Executive Village, Cainta, Rizal</p>
-
-    
     <p><strong>Hobbies:</strong> Watching Basketball, Baking, Playing with my Dogs, and Coffee Hopping</p>
     <br>
     <p>
@@ -184,25 +182,19 @@ Hi! I am Judy Ann Maranan. I am a college student who loves learning new things,
     <h3>Grade School</h3>
     <p>
 📚I studied at Urdaneta Elementary School where I learned the importance of education, discipline, and friendship.
- 
     </p>
     <h3>High School</h3>
     <p>
-       
 📚I studied at Bendita National High School where I discovered my strengths and built my confidence.
-    
     </p>
     <h3>College</h3>
     <p>
-    
 📚I studied BS Accountancy at AMA University Quezon City.
-    
     </p>
     <p>
 📚 I am currently studying at LPU Manila taking up Customs Administration.
         As a college student, I continue to challenge myself, learn new things,
         and work hard to achieve my dreams and build a successful future.
-    
     </p>
 </section>
 <section id="family">
@@ -290,7 +282,6 @@ Depression, anxiety, and emotional struggles.
  
 Process of Change
 Spread kindness, encourage communication, and support mental health programs.
- 
  
 <footer>
     <p>Thank you for visiting my website!</p>
