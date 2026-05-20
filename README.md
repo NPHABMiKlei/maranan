@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Personal Journey</title>
+<title>My Personal Website</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 *{
@@ -21,7 +21,7 @@ body{
 /* HEADER */
 header{
     background:linear-gradient(to right,#ff66b2,#ff99cc);
-    color:white;
+    color:pink;
     text-align:center;
     padding:60px 20px;
 }
@@ -170,6 +170,8 @@ footer a:hover{
     <p><strong>Birthday:</strong> April 09, 1998</p>
     <p><strong>Favorite Color:</strong> Pink</p>
     <p><strong>Address:</strong> L5 B6 Carmona St. cor., Agueda Vista Verde Executive Village, Cainta, Rizal</p>
+
+    
     <p><strong>Hobbies:</strong> Watching Basketball, Baking, Playing with my Dogs, and Coffee Hopping</p>
     <br>
     <p>
@@ -188,15 +190,19 @@ Hi! I am Judy Ann Maranan. I am a college student who loves learning new things,
     <p>
        
 📚I studied at Bendita National High School where I discovered my strengths and built my confidence.
+    
     </p>
     <h3>College</h3>
     <p>
+    
 📚I studied BS Accountancy at AMA University Quezon City.
+    
     </p>
     <p>
 📚 I am currently studying at LPU Manila taking up Customs Administration.
         As a college student, I continue to challenge myself, learn new things,
         and work hard to achieve my dreams and build a successful future.
+    
     </p>
 </section>
 <section id="family">
@@ -286,8 +292,6 @@ Process of Change
 Spread kindness, encourage communication, and support mental health programs.
  
  
-    </p>
-</section>
 <footer>
     <p>Thank you for visiting my website!</p>
     <br>
