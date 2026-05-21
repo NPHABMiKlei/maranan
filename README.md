@@ -1,298 +1,677 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<title>Judy Ann Portfolio 🌸</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
 }
+
 body{
-    background:#fff0f5;
-    color:#444;
-    line-height:1.8;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(to bottom,#ffe6f2,#e6f2ff);
+    overflow-x:hidden;
+    color:#5c4a5d;
 }
-/* HEADER */
-header{
-    background:linear-gradient(to right,#ff66b2,#ff99cc);
-    color:pink;
-    text-align:center;
-    padding:60px 20px;
-}
-header img{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    border:5px solid white;
-    object-fit:cover;
-    margin-top:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-}
-header h1{
-    font-size:40px;
-    margin-bottom:10px;
-}
-header p{
-    font-size:18px;
-}
+
 /* NAVIGATION */
+
 nav{
-    background:#ff85c1;
-    padding:15px;
-    position:sticky;
+    position:fixed;
+    width:100%;
     top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:rgba(255,255,255,0.5);
+    backdrop-filter:blur(10px);
     z-index:1000;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
+
+.logo{
+    font-family:'Pacifico',cursive;
+    font-size:28px;
+    color:#ff69b4;
+}
+
 nav ul{
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    gap:25px;
     list-style:none;
 }
-nav ul li{
-    margin:10px;
-}
+
 nav ul li a{
     text-decoration:none;
-    color:white;
-    font-weight:600;
+    color:#5c4a5d;
+    font-weight:500;
     transition:0.3s;
 }
+
 nav ul li a:hover{
-    color:yellow;
+    color:#ff69b4;
 }
-/* SECTION DESIGN */
-section{
-    background:white;
-    margin:25px;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:120px 10%;
+    gap:50px;
+    position:relative;
+}
+
+.hero img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 0 30px rgba(255,105,180,0.4);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#ff69b4;
+    font-family:'Pacifico',cursive;
+}
+
+.hero-text h2{
+    margin:20px 0;
+    color:#6b5b6b;
+}
+
+.hero-text p{
+    line-height:1.9;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#ff69b4;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
     transition:0.3s;
 }
-section:hover{
-    transform:translateY(-5px);
+
+.btn:hover{
+    background:#ff85c1;
+    transform:scale(1.05);
 }
-h2{
-    color:#ff4fa3;
-    margin-bottom:20px;
-    font-size:30px;
+
+/* SECTIONS */
+
+section{
+    padding:100px 10%;
 }
-h3{
-    color:#ff66b2;
-    margin-top:20px;
-    margin-bottom:10px;
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
 }
+
+.section-title h2{
+    font-size:42px;
+    color:#ff69b4;
+    font-family:'Pacifico',cursive;
+}
+
+/* CARD */
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    line-height:2;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* INTEREST CARDS */
+
+.interest{
+    background:white;
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.interest:hover{
+    transform:translateY(-10px);
+}
+
+.interest i{
+    font-size:45px;
+    color:#ff69b4;
+    margin-bottom:15px;
+}
+
 /* GALLERY */
+
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
-    margin-top:20px;
 }
-.gallery div{
-    background:#fff7fb;
-    padding:15px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
+
 .gallery img{
     width:100%;
-    border-radius:15px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.04);
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#ff69b4;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    font-size:30px;
+    margin:0 12px;
+    color:#ff69b4;
     transition:0.3s;
 }
-.gallery img:hover{
-    transform:scale(1.05);
+
+.socials a:hover{
+    transform:scale(1.2);
 }
+
+/* FLOATING HEARTS */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.heart{
+    position:absolute;
+    font-size:20px;
+    animation:floatUp linear infinite;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-10vh);
+        opacity:0;
+    }
+}
+
 /* FOOTER */
+
 footer{
-    background:#ff66b2;
-    color:white;
     text-align:center;
-    padding:25px;
-    margin-top:30px;
+    padding:30px;
+    color:#777;
 }
-footer a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-    font-weight:600;
-}
-footer a:hover{
-    color:yellow;
-}
-/* RESPONSIVE */
+
+/* MOBILE */
+
 @media(max-width:768px){
-    nav ul{
-        flex-direction:column;
-        align-items:center;
-    }
-    header h1{
-        font-size:30px;
-    }
-    section{
-        margin:15px;
-        padding:25px;
-    }
+
+.hero{
+    text-align:center;
 }
+
+.hero-text h1{
+    font-size:45px;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
-<header>
-    <h1>My Personal Portfolio </h1>
-    <p>Welcome to my personal website</p>
-<img src="IMG_8621.jpeg" alt="Profile Picture">
-</header>
+
+<!-- FLOATING HEARTS -->
+<div class="hearts"></div>
+
+<!-- NAVIGATION -->
+
 <nav>
+
+<div class="logo">Juday 🌸</div>
+
 <ul>
-    <li><a href="#personal">Personal</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#family">Family</a></li>
-    <li><a href="#collections">Collections</a></li>
-    <li><a href="#friends">Friends</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#advocacy">Advocacy</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#interests">Interests</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
-<section id="personal">
-    <h2>Personal Information </h2>
-    <p><strong>Full Name:</strong> Judy Ann B. Maranan</p>
-    <p><strong>Age:</strong> 28 years old</p>
-    <p><strong>Birthday:</strong> April 09, 1998</p>
-    <p><strong>Favorite Color:</strong> Pink</p>
-    <p><strong>Address:</strong> L5 B6 Carmona St. cor., Agueda Vista Verde Executive Village, Cainta, Rizal</p>
-    <p><strong>Hobbies:</strong> Watching Basketball, Baking, Playing with my Dogs, and Coffee Hopping</p>
-    <br>
-    <p>
-       
-Hi! I am Judy Ann Maranan. I am a college student who loves learning new things, spending time with family, friends, and especially with my dogs while exploring creative ideas. My dream is to become successful and inspire others through hard work and kindness.
-    </p>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<!-- REPLACE WITH YOUR PHOTO -->
+<img src="yourphoto.jpg" alt="Profile Picture">
+
+<div class="hero-text">
+
+<h1>Welcome 🌸</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Hi! I am Judy Ann Maranan. I am a college student who loves learning new things,
+spending time with family, friends, and especially with my dogs while exploring creative ideas.
+My dream is to become successful and inspire others through hard work and kindness.
+</p>
+
+<a href="#about" class="btn">Explore More</a>
+
+</div>
+
 </section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="section-title">
+<h2>About Me</h2>
+</div>
+
+<div class="card">
+
+<p><strong>Full Name:</strong> Judy Ann B. Maranan</p>
+<p><strong>Nickname:</strong> Juday</p>
+<p><strong>Age:</strong> 28 years old</p>
+<p><strong>Birthday:</strong> April 09, 1998</p>
+<p><strong>Address:</strong> Lot5 Blk6 Carmona St. Corn Agueda VVEV, Cainta Rizal</p>
+<p><strong>School:</strong> Lyceum of the Philippines - Manila</p>
+<p><strong>Course:</strong> BS Customs Administration</p>
+
+<br>
+
+<p>
+🌸 Soft • Funny • Sweet • Introvert • Creative • Calm • Friendly
+</p>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
 <section id="education">
-    <h2>Educational Background</h2>
-    <h3>Grade School</h3>
-    <p>
-📚I studied at Urdaneta Elementary School where I learned the importance of education, discipline, and friendship.
-    </p>
-    <h3>High School</h3>
-    <p>
-📚I studied at Bendita National High School where I discovered my strengths and built my confidence.
-    </p>
-    <h3>College</h3>
-    <p>
-📚I studied BS Accountancy at AMA University Quezon City.
-    </p>
-    <p>
-📚 I am currently studying at LPU Manila taking up Customs Administration.
-        As a college student, I continue to challenge myself, learn new things,
-        and work hard to achieve my dreams and build a successful future.
-    </p>
+
+<div class="section-title">
+<h2>Educational Background</h2>
+</div>
+
+<div class="grid">
+
+<div class="interest">
+<i class="fa-solid fa-school"></i>
+<h3>Grade School</h3>
+<p>
+Studied at Urdaneta Elementary School where I learned the importance of education, discipline, and friendship.
+</p>
+</div>
+
+<div class="interest">
+<i class="fa-solid fa-book"></i>
+<h3>High School</h3>
+<p>
+Studied at Bendita National High School where I discovered my strengths and built confidence.
+</p>
+</div>
+
+<div class="interest">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>College</h3>
+<p>
+Studied BS Accountancy at AMA University Quezon City and currently studying Customs Administration at LPU Manila.
+</p>
+</div>
+
+</div>
+
 </section>
-<section id="family">
-    <h2>Family </h2>
-    <h3>Father</h3>
-    <p>
-        My father is hardworking, responsible, and always willing to sacrifice for our family.
-        He inspires me to stay strong and never give up in life.
-    </p>
-    <h3>Mother</h3>
-    <p>
-        My mother is loving, caring, and supportive in everything I do.
-        She motivates me to become a better person and always reminds me to believe in myself.
-    </p>
-    <h3>Siblings</h3>
-    <p>
-        My siblings are not only part of my family but also my best friends.
-        I enjoy spending time with them, sharing laughter, and creating happy memories together.
-    </p>
+
+<!-- ACHIEVEMENTS -->
+
+<section>
+
+<div class="section-title">
+<h2>Achievements</h2>
+</div>
+
+<div class="card">
+
+<p>🏆 Passed NCIII Bookkeeping in 2018</p>
+<p>🏆 Passed the IC3 Assessment</p>
+
+</div>
+
 </section>
-<section id="collections">
-    <h2>Collections </h2>
-    <p>
-        I love collecting Snoopy items because they make me happy and remind me of childhood memories.
-    </p>
-<section id="interest">
-  <h2> Interests</h2>
-Coffee Hopping
-I enjoy coffee hopping and exploring different cafés, discovering their unique ambiance, drinks, and stories behind each business. It inspires me creatively and helps me appreciate how cafés build strong customer experiences.
-Business & Entrepreneurship
-I am passionate about business and entrepreneurship, especially learning how ideas turn into successful ventures.
-I'm interested in building my own business in the future and understanding how branding, marketing, and customer experience work together.
-Personal Growth
-I also value continuous learning and self-improvement, always looking for ways to grow my skills, mindset, and creativity in both personal and professional life. 
- 
+
+<!-- INTERESTS -->
+
+<section id="interests">
+
+<div class="section-title">
+<h2>My Interests</h2>
+</div>
+
+<div class="grid">
+
+<div class="interest">
+<i class="fa-solid fa-mug-hot"></i>
+<h3>Coffee Hopping</h3>
+<p>
+I enjoy exploring different cafés, drinks, and unique cozy ambiances.
+</p>
+</div>
+
+<div class="interest">
+<i class="fa-solid fa-briefcase"></i>
+<h3>Business</h3>
+<p>
+I am passionate about business, entrepreneurship, branding, and customer experience.
+</p>
+</div>
+
+<div class="interest">
+<i class="fa-solid fa-heart"></i>
+<h3>Personal Growth</h3>
+<p>
+I value continuous learning, creativity, and self-improvement.
+</p>
+</div>
+
+<div class="interest">
+<i class="fa-solid fa-paw"></i>
+<h3>Snoopy Collection</h3>
+<p>
+I love collecting Snoopy items because they remind me of childhood memories.
+</p>
+</div>
+
+</div>
+
 </section>
-<section id="friends">
-    <h2>Friends Menu</h2>
-    <h3>School Friends</h3>
-    <p>
- These are the amazing people who make my journey more fun, meaningful, and unforgettable. Always there through ups and downs. My coffee buddy and laughter partner. Someone who makes every day brighter.
-    </p>
-    <p><em>"Friends are the family we choose."</em></p>
+
+<!-- HOBBIES -->
+
+<section>
+
+<div class="section-title">
+<h2>My Hobbies</h2>
+</div>
+
+<div class="card">
+
+<p>🍰 Baking</p>
+<p>🏀 Watching PBA Basketball</p>
+<p>🐶 Playing with my dogs</p>
+
+</div>
+
 </section>
-<section id="achievements">
-    <h2>Achievements Menu</h2>
-    <ul>
-        <li>Graduated Elementary and High School with Special Award</li>
-        <li>Passed the NCIII Bookkeeping in 2018</li>
-        <li>Passed the IC3 Assessment</li>
-    </ul>
+
+<!-- FAVORITES -->
+
+<section>
+
+<div class="section-title">
+<h2>Favorites</h2>
+</div>
+
+<div class="card">
+
+<p><strong>Favorite Food:</strong> Pain Au Chocolat & Spaghetti</p>
+<p><strong>Favorite Drink:</strong> Ice Coffee & Matcha Latte</p>
+<p><strong>Favorite Color:</strong> Pink</p>
+
+</div>
+
 </section>
+
+<!-- ADVOCACY -->
+
+<section>
+
+<div class="section-title">
+<h2>Mental Health Awareness</h2>
+</div>
+
+<div class="card">
+
+<p>
+Mental health awareness is important because many people silently struggle with stress,
+anxiety, and emotional challenges.
+</p>
+
+<br>
+
+<p><strong>Issues:</strong> Lack of awareness and emotional support.</p>
+
+<p><strong>Causes:</strong> Stress, pressure, family problems, and social media.</p>
+
+<p><strong>Effects:</strong> Depression, anxiety, and emotional struggles.</p>
+
+<p><strong>Process of Change:</strong> Spread kindness, encourage communication, and support mental health programs.</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
 <section id="gallery">
-<section IMG_9215.jpeg="gallery">
-    <section IMG_9216.jpeg="gallery">
-    <h2>Memories</h2>
-    <div class="memories">
-        <div>
-            <img src="482511200_987311059587804_472418" alt="Gallery Photo">
-            <p>“A moment worth remembering.”</p>
-        </div>
-        <div>
-            <img src="IMG_9749.jpeg" alt="Gallery Photo">
-            <p>“Small memories, big happiness.”</p>
-    </div>
+
+<div class="section-title">
+<h2>Gallery</h2>
+</div>
+
+<div class="gallery">
+
+<!-- REPLACE THESE WITH YOUR OWN PHOTOS -->
+
+<img src="coffee.jpg">
+<img src="friends.jpg">
+<img src="dogs.jpg">
+<img src="snoopy.jpg">
+<img src="floral.jpg">
+<img src="selfie.jpg">
+
+</div>
+
 </section>
-<section id="advocacy">
-    <h2>Advocacy </h2>
-    <h3>Mental Health Awareness</h3>
-    <p>
-        Mental Health Awareness
-Mental health awareness is important because many people silently struggle with stress, anxiety, and emotional challenges.
- 
-Issues
-Lack of awareness and emotional support.
- 
-Causes
-Stress, pressure, family problems, and social media.
- 
-Effects
-Depression, anxiety, and emotional struggles.
- 
-Process of Change
-Spread kindness, encourage communication, and support mental health programs.
- 
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="section-title">
+<h2>Contact Me</h2>
+</div>
+
+<div class="card contact">
+
+<p>
+📧 Email:
+<a href="mailto:jmaranan0409@yahoo.com">
+jmaranan0409@yahoo.com
+</a>
+</p>
+
+<p>
+📱 Contact Number:
+0915 289 6007
+</p>
+
+<div class="socials">
+
+<!-- FACEBOOK -->
+
+<a href="https://www.facebook.com/share/1KPvi4ufrd/?mibextid=wwXIfr" target="_blank">
+
+<i class="fab fa-facebook"></i>
+
+</a>
+
+<!-- INSTAGRAM -->
+
+<a href="https://www.instagram.com/nphabmi_09?igsh=MWZhdHU3bGNrNzAxMQ%3D%3D&utm_source=qr" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+</div>
+
+<br>
+
+<p>
+Thank you for visiting my website 🌸
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
 <footer>
-    <p>Thank you for visiting my website!</p>
-    <br>
-    <a href="https://www.facebook.com/share/1KPvi4ufrd/?mibextid=wwXIfr" target="_blank">
-        💙Facebook
-    </a>
-    |
-    <a href="https://www.instagram.com/nphabmi_09?igsh=MWZhdHU3bGNrNzAxMQ%3D%3D&utm_source=qr" target="_blank">
-        🌸Instagram
-    </a>
-    |
-    <a href="mailto:jmaranan0409@yahoo.com">
-        📩Email Me
-    </a>
-    <br><br>
-    <p>© 2026 Judy Ann Maranan | All Rights Reserved</p>
+© 2026 Judy Ann Portfolio ✨
 </footer>
+
+<script>
+
+/* TYPING EFFECT */
+
+const text = "Coffee Lover ☕ | Dog Lover 🐶 | Floral Soul 🌷";
+
+let i = 0;
+
+function typing(){
+
+    if(i < text.length){
+
+        document.getElementById("typing").innerHTML += text.charAt(i);
+
+        i++;
+
+        setTimeout(typing,80);
+
+    }
+
+}
+
+typing();
+
+/* FLOATING HEARTS */
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = "💖";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.animationDuration = Math.random() * 5 + 5 + "s";
+
+    heart.style.fontSize = Math.random() * 20 + 15 + "px";
+
+    document.querySelector(".hearts").appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },10000);
+
+}
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
+    
